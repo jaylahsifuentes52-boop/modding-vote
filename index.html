@@ -1,85 +1,23 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modding Vote</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#100b20">
+<meta name="description" content="Vote for the VR games you want modded next."><title>Modding Vote — Choose the Next Mod</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header>
-    <div class="logo">🎮 MODDING <span>VOTE</span></div>
-    <a href="#suggest" class="suggest-button">+ Suggest Game</a>
-</header>
-
-<section class="hero">
-    <div class="badge">● COMMUNITY GAME POLL</div>
-
-    <h1>What Game Should<br>
-        <span>We Mod Next?</span>
-    </h1>
-
-    <p>Vote for your favorite game, like games, and help choose our next modding project!</p>
-
-    <a href="#games" class="main-button">Explore Games ↓</a>
-
-    <div class="stats">
-        <div>
-            <h2 id="game-count">0</h2>
-            <p>GAMES</p>
-        </div>
-
-        <div>
-            <h2 id="vote-count">0</h2>
-            <p>VOTES</p>
-        </div>
-
-        <div>
-            <h2 id="like-count">0</h2>
-            <p>LIKES</p>
-        </div>
-    </div>
-</section>
-
-<section class="games" id="games">
-    <h2>🏆 Vote For A Game</h2>
-    <p>Choose the game you want to see modded!</p>
-
-    <div id="game-list" class="game-grid"></div>
-</section>
-
-<section class="suggest" id="suggest">
-    <h2>➕ Suggest A Game</h2>
-    <p>Can't find your favorite game? Add it here!</p>
-
-    <form id="suggest-form">
-        <input
-            type="text"
-            id="game-name"
-            placeholder="Enter game name..."
-            maxlength="45"
-            required
-        >
-
-        <textarea
-            id="game-desc"
-            placeholder="Describe the game..."
-            maxlength="120"
-        ></textarea>
-
-        <button type="submit">Add Game +</button>
-    </form>
-</section>
-
-<footer>
-    <h3>🎮 MODDING VOTE</h3>
-    <p>Made for the modding community.</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-```
+<body><div class="glow glow-one"></div><div class="glow glow-two"></div>
+<header class="site-header"><a class="brand" href="#"><span class="brand-icon">✦</span> MODDING <b>VOTE</b></a><a class="header-button" href="#suggest">＋ Suggest a game</a></header>
+<main>
+<section class="hero"><div class="eyebrow"><span class="pulse"></span> THE COMMUNITY DECIDES</div>
+<h1>WHAT SHOULD<br>WE <span>MOD NEXT?</span></h1><p class="hero-copy">Pick your favorite VR games, cast your vote, and help decide what the community works on next.</p>
+<a class="primary-button" href="#games">Explore the games <span>↓</span></a>
+<div class="stats"><div class="stat"><strong id="game-count">0</strong><span>GAMES</span></div><div class="stat"><strong id="vote-count">0</strong><span>VOTES</span></div><div class="stat"><strong id="like-count">0</strong><span>LIKES</span></div></div>
+<p class="local-note">Preview version · votes and suggestions are saved in this browser</p></section>
+<section class="section games-section" id="games"><div class="section-heading"><div><div class="section-kicker">COMMUNITY POLL</div><h2>Choose your game</h2><p>Vote for the game you want to see modded.</p></div><span class="section-mark">01 / VOTE</span></div><div id="game-list" class="game-grid" aria-live="polite"></div></section>
+<section class="suggest-section" id="suggest"><div class="suggest-copy"><div class="section-kicker">YOUR IDEA MATTERS</div><h2>Got a game in mind?</h2><p>Suggest a VR game and add its official page or store link so everyone can check it out.</p></div>
+<form id="suggest-form"><label for="game-name">Game name</label><input type="text" id="game-name" placeholder="Example: Gorilla Tag" maxlength="45" required>
+<label for="game-url">Game website URL</label><input type="url" id="game-url" placeholder="https://example.com" required>
+<label for="game-desc">Short description <span>(optional)</span></label><textarea id="game-desc" placeholder="What is the game about?" maxlength="160" rows="3"></textarea>
+<button class="primary-button submit-button" type="submit">Add your game <span>＋</span></button><p id="form-message" class="form-message" role="status"></p></form></section>
+</main><footer><a class="brand" href="#"><span class="brand-icon">✦</span> MODDING <b>VOTE</b></a><p>Built for the VR modding community.</p></footer><script src="script.js"></script></body></html>
