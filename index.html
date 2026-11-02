@@ -1,1 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modding Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <div class="logo">🎮 MODDING <span>VOTE</span></div>
+    <a href="#suggest" class="suggest-button">+ Suggest Game</a>
+</header>
+
+<section class="hero">
+    <div class="badge">● COMMUNITY GAME POLL</div>
+
+    <h1>What Game Should<br>
+        <span>We Mod Next?</span>
+    </h1>
+
+    <p>Vote for your favorite game, like games, and help choose our next modding project!</p>
+
+    <a href="#games" class="main-button">Explore Games ↓</a>
+
+    <div class="stats">
+        <div>
+            <h2 id="game-count">0</h2>
+            <p>GAMES</p>
+        </div>
+
+        <div>
+            <h2 id="vote-count">0</h2>
+            <p>VOTES</p>
+        </div>
+
+        <div>
+            <h2 id="like-count">0</h2>
+            <p>LIKES</p>
+        </div>
+    </div>
+</section>
+
+<section class="games" id="games">
+    <h2>🏆 Vote For A Game</h2>
+    <p>Choose the game you want to see modded!</p>
+
+    <div id="game-list" class="game-grid"></div>
+</section>
+
+<section class="suggest" id="suggest">
+    <h2>➕ Suggest A Game</h2>
+    <p>Can't find your favorite game? Add it here!</p>
+
+    <form id="suggest-form">
+        <input
+            type="text"
+            id="game-name"
+            placeholder="Enter game name..."
+            maxlength="45"
+            required
+        >
+
+        <textarea
+            id="game-desc"
+            placeholder="Describe the game..."
+            maxlength="120"
+        ></textarea>
+
+        <button type="submit">Add Game +</button>
+    </form>
+</section>
+
+<footer>
+    <h3>🎮 MODDING VOTE</h3>
+    <p>Made for the modding community.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
